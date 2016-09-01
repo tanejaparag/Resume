@@ -9,7 +9,7 @@
 <link href="css/resume.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/vertical.news.slider.css">
-
+<link rel="stylesheet" href="css/animate.css">
  <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
@@ -30,15 +30,15 @@
 
 <body data-spy="scroll" data-target=".navbar" >
 	<script type="text/javascript">
-		$(document).ready(function(){
-	
-		
-		
+		$(document).ready(function(){	
 		$(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
 		});
+		
+		
+
 		</script>
 
 
@@ -49,11 +49,7 @@
 		<div class="collapse navbar-collapse navbar-left navbar-main-collapse">
 			<ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li >
-                        <a class="navbar-brand" href="#page-top">
-						<img src="./img/lightroomicon.jpg"  alt="">
-						</a>
-                    </li>
+                   
 			</ul>
 			</div>
 		
@@ -65,8 +61,8 @@
                         <a href="#page-top"></a>
                     </li>
 					  
-					  <li>
-                        <a class="page-scroll random" href="#about">About</a>
+					  <li class="active" id="first">
+                        <a class="page-scroll active" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#skills">Skills</a>
@@ -98,7 +94,7 @@
           <div class="col-lg-12">
             <div class="col-xs-12 col-sm-4">
               <figure>
-                <img class="img-circle img-responsive" alt="" src="img/d.png">
+                <img class="img-circle img-responsive" alt="" src="img/e.png">
               </figure>
               
               <div class="row" style="text-align: center;">
@@ -120,7 +116,7 @@
                 <li class="list-group-item">Software Engineer</li>
                 <li class="list-group-item">Adobe Systems </li>
                 <li class="list-group-item"><i class="fa fa-phone"></i> +91 8860476316 </li>
-                <li class="list-group-item"><i class="fa fa-envelope"></i> tanejaparag@gmail.com</li>
+                <li class="list-group-item"><i class="fa fa-envelope"></i> ptaneja@adobe.com</li>
               </ul>
             </div>
           </div>
@@ -202,10 +198,10 @@
 			
 			<li><h5> <b>Automation Developer &ndash; Lightroom </b></h5></li>
             <p class="list-group-item-text">
-					Lightroom is Adobe Product used worldwide for Photo Management and Photo Editing. There was an automation framework ‘Ekinya&rsquo; already in place which used to test Lightroom in English Language. As Lightroom supports 11 languages, task was to enhance the framework to support languages other than English. 
+					Lightroom is Adobe Product used worldwide for Photo Management and Photo Editing. There was an automation framework &lsquo;Ekinya&rsquo; already in place which used to test Lightroom in English Language. As Lightroom supports 11 languages, task was to enhance the framework to support languages other than English. 
 			  <ul>
 			  <li>Test Complete, Squish, Hudson, Jenkins, Html, CSS, JQuery, Bootstrap</li>
-			  <li>Improved the automation framework ‘Ekinya&rsquo; that tests the Lightroom product in English to support other languages</li>
+			  <li>Improved the automation framework &lsquo;Ekinya&rsquo; that tests the Lightroom product in English to support other languages</li>
 			  <li>Collaborated with the product core team to understand the existing framework and propose a solution</li>
 			  <li>Implemented the solution for both MAC and Windows operating systems</li>
 			  <li>Integrated Jenkins in the framework for continuous development. It builds the project, passes parameters to framework and kick-starts the automation on setup machines successfully.</li>
@@ -354,8 +350,6 @@
 </div>
    <script src="js/jquery.easing.min.js"></script>
    <script src="js/scrolling-nav.js"></script>
-      <script src="js/waypoints.min.js"></script>
-<script src="js/vertical.news.slider.js"></script>
-  <script src="js/grayscale.js"></script>
+      
 </body>
 </html>
