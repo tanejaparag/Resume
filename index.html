@@ -10,9 +10,11 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/vertical.news.slider.css">
 <link rel="stylesheet" href="css/animate.css">
+<link href="css/scrolling-nav.css" rel="stylesheet">
  <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+   <script src="js/jquery.easing.min.js"></script>
+   <script src="js/scrolling-nav.js"></script>
 
 <style>
 .navbar .navbar-nav {
@@ -28,7 +30,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" >
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
 	<script type="text/javascript">
 		$(document).ready(function(){	
 		$(".nav a").on("click", function(){
@@ -46,32 +48,34 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
 		
-		<div class="collapse navbar-collapse navbar-left navbar-main-collapse">
-			<ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                   
-			</ul>
-			</div>
+	<div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 		
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbarCollapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 					                      <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#page-top" class="page-scroll"></a>
                     </li>
 					  
-					  <li class="active" id="first">
-                        <a class="page-scroll active" href="#about">About</a>
+					  <li  id="first">
+                        <a class="page-scroll" href="#About">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#skills">Skills</a>
+                        <a class="page-scroll" href="#Skills">Skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#experience">Experience</a>
+                        <a class="page-scroll" href="#Experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#education">Education</a>
+                        <a class="page-scroll" href="#Education">Education</a>
                     </li>
                 </ul>
             </div>
@@ -80,9 +84,12 @@
         <!-- /.container -->
 
     </nav>
-<div class="resume" id="about">
+<div class="resume" id="About">
     <header class="page-header">
     
+	</br>
+	</br>
+	</br>
 	</br>
     <small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Friday, August 26, 2016</time></small>
   </header>
@@ -143,7 +150,7 @@
 			<button type="button" class="btn btn-xs btn-info" disabled="disabled">&bull;	Vendor Management</button>
 			
 			<button type="button" class="btn btn-xs btn-info" disabled="disabled">&bull;	Onsite/Offshore Delivery</button>
-			<button type="button" class="btn btn-xs btn-info" disabled="disabled" id="skills">&bull;	Process Improvement</button>
+			<button type="button" class="btn btn-xs btn-info" disabled="disabled" id="Skills">&bull;	Process Improvement</button>
 
 
 		
@@ -158,7 +165,7 @@
 <b>Automation Tools:</b>	       Desktop &ndash; RFT, Squish, Test Complete	Website &ndash; Selenium </br>
 <b>Web Development:</b>	       HTML, CSS, Bootstrap 3, Java Script, jQuery </br>
 <b>Applications:</b>			       Eclipse, Visual Studio, QC, TFS, Jira, Trello, Dreamweaver, Perforce </br>
-<b id="experience">Certifications:</b>                      OCJP certified SE 6 Programmer </br>
+<b id="Experience">Certifications:</b>                      OCJP certified SE 6 Programmer </br>
 
         </p>
       </div>
@@ -267,7 +274,7 @@ Internationalization Quality Engineer for Adobe Stock, as part of this role I ha
               </div>
             </div>
             <div class="progress">
-              <div data-placement="top" style="width: 65%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-warning" id="education">
+              <div data-placement="top" style="width: 65%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-warning" id="Education">
                 <span class="sr-only">65%</span>
                 <span class="progress-type">API</span>
               </div>
@@ -331,7 +338,7 @@ Internationalization Quality Engineer for Adobe Stock, as part of this role I ha
       </div>
     </div>
 	
-	      <div class="bs-callout bs-callout-danger" id="experience">
+	      <div class="bs-callout bs-callout-danger" >
         <h4>College Projects</h4>
         <ul >
           <li>Made changes in CSMA\CA algorithm in Network simulator to improve the efficiency and reduce power consumption of wireless sensor network. Used C++, Tool command language, awk script to implement it.</li>
@@ -348,8 +355,7 @@ Internationalization Quality Engineer for Adobe Stock, as part of this role I ha
 </div>
 
 </div>
-   <script src="js/jquery.easing.min.js"></script>
-   <script src="js/scrolling-nav.js"></script>
+
       
 </body>
 </html>
